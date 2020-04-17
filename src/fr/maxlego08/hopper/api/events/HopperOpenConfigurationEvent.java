@@ -8,11 +8,13 @@ public class HopperOpenConfigurationEvent extends HopperEvent {
 
 	private final Hopper hopper;
 	private final Player player;
+	private boolean isOwner;
 
-	public HopperOpenConfigurationEvent(Hopper hopper, Player player) {
+	public HopperOpenConfigurationEvent(Hopper hopper, Player player, boolean isOwner) {
 		super();
 		this.hopper = hopper;
 		this.player = player;
+		this.isOwner = isOwner;
 	}
 
 	/**
@@ -27,6 +29,21 @@ public class HopperOpenConfigurationEvent extends HopperEvent {
 	 */
 	public Player getPlayer() {
 		return player;
+	}
+
+	/**
+	 * @return the isOwner
+	 */
+	public boolean isOwner() {
+		return isOwner;
+	}
+
+	/**
+	 * @param isOwner
+	 *            the isOwner to set
+	 */
+	public void setOwner(boolean isOwner) {
+		this.isOwner = isOwner;
 	}
 
 }

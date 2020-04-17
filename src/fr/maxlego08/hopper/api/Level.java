@@ -1,10 +1,12 @@
 package fr.maxlego08.hopper.api;
 
 import java.util.List;
+import java.util.Map;
+
+import org.bukkit.inventory.ItemStack;
 
 import fr.maxlego08.hopper.economy.Economy;
 import fr.maxlego08.hopper.modules.Module;
-import fr.maxlego08.hopper.zcore.utils.builder.ItemBuilder;
 
 public interface Level {
 
@@ -66,7 +68,13 @@ public interface Level {
 	 * 
 	 * @return
 	 */
-	ItemBuilder build();
+	ItemStack build();
+	
+	/**
+	 * 
+	 * @return
+	 */
+	ItemStack getItemStack();
 	
 	/**
 	 * 
@@ -88,7 +96,7 @@ public interface Level {
 	
 	/**
 	 * 
-	 * @return
+	 * @return You will get a copy of the list of modules
 	 */
 	List<Module> getModules();
 	
@@ -106,8 +114,48 @@ public interface Level {
 	
 	/**
 	 * 
+	 * @param key
+	 * @return
+	 */
+	Object getProperty(String key);
+	
+	/**
+	 * 
+	 * @param key
+	 * @return
+	 */
+	int getIntegerAsProperty(String key);
+	
+	/**
+	 * 
+	 * @param key
+	 * @return
+	 */
+	boolean getBooleanAsProperty(String key);
+	
+	/**
+	 * 
+	 * @param key
+	 * @return
+	 */
+	long getLongAsProperty(String key);
+	
+	/**
+	 *
+	 * @return
+	 */
+	Map<String, Object> getProperties();
+	
+	/**
+	 * 
 	 * @param hopper
 	 */
 	void run(Hopper hopper);
+	
+	/**
+	 * When you add a module the priorities will be recalculated
+	 * @param module
+	 */
+	void addModule(Module module);
 	
 }

@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import fr.maxlego08.hopper.modules.Module;
 import fr.maxlego08.hopper.zcore.utils.storage.Saveable;
 
 public interface HopperManager extends Saveable {
@@ -57,7 +58,7 @@ public interface HopperManager extends Saveable {
 	 * @return level
 	 */
 	Level next(int level);
-
+	
 	/**
 	 * Allows you to create a new hopper
 	 * 
@@ -85,7 +86,7 @@ public interface HopperManager extends Saveable {
 	void interactHopper(Player player, Block block, PlayerInteractEvent event);
 	
 	/**
-	 * Allows you to interact with a Hopper
+	 * Allows you to interact with a block
 	 * 
 	 * @param player
 	 * @param block
@@ -94,7 +95,7 @@ public interface HopperManager extends Saveable {
 	void interactBlock(Player player, Block block, PlayerInteractEvent event);
 
 	/**
-	 * 
+	 * Destroy a hopper
 	 * 
 	 * @param player
 	 * @param hopper
@@ -117,6 +118,7 @@ public interface HopperManager extends Saveable {
 	void saveDefaultLevel();
 
 	/**
+	 * Adding a level to the hopper
 	 * 
 	 * @param hopper
 	 * @param player
@@ -124,16 +126,30 @@ public interface HopperManager extends Saveable {
 	void updateLevel(Hopper hopper, Player player);
 	
 	/**
+	 * Delete a hopper
 	 * 
 	 * @param hopper
 	 */
 	void deleteHopper(Hopper hopper);
 	
 	/**
+	 * Allows you to put the player in "link" mode, when he will click on a container he will connect to the selected hopper
 	 * 
 	 * @param player
 	 * @param hopper
 	 */
 	void linkHopper(Player player, Hopper hopper);
+	
+	/**
+	 * Add a module for all levels
+	 * 
+	 * @param module
+	 */
+	void addModule(Module module);
+	
+	/**
+	 * 
+	 */
+	void run();
 
 }

@@ -8,6 +8,8 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
+import fr.maxlego08.hopper.modules.Module;
+
 public interface Hopper {
 
 	/**
@@ -15,6 +17,12 @@ public interface Hopper {
 	 * @return uuid of owner
 	 */
 	UUID getOwner();
+	
+	/**
+	 * 
+	 * @return uuid of hopper
+	 */
+	UUID getUniqueId();
 	
 	/**
 	 * Allows you to retrieve the list of players who have access to modify the hopper
@@ -75,6 +83,20 @@ public interface Hopper {
 	 * @return
 	 */
 	boolean isValid();
+	
+	/**
+	 * 
+	 * @param module
+	 * @return
+	 */
+	boolean isActive(Module module);
+
+	/**
+	 * 
+	 * @param module
+	 * @param active
+	 */
+	void setActive(Module module, boolean active);
 	
 	/**
 	 * 

@@ -1,5 +1,6 @@
-name: zHopper
+name: zHopperAPI
 author: Maxlego08
-main: fr.maxlego08.hopper.HopperPlugin
+main: fr.maxlego08.hopper.example.HopperPlugin
 version: 1.0.0.0
+depend: [zHopper]
 commands:

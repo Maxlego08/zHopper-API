@@ -4,6 +4,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.maxlego08.hopper.api.HopperManager;
+import fr.maxlego08.hopper.api.Level;
 
 public class HopperPlugin extends JavaPlugin {
 
@@ -17,6 +18,9 @@ public class HopperPlugin extends JavaPlugin {
 		hopperManager = provider.getProvider();
 
 		hopperManager.addModule(new ModuleExample("example", 5));
+		
+		Level level = hopperManager.getLevel(3);
+		level.addModule(new ModuleExample("example", 5));
 	}
 
 }

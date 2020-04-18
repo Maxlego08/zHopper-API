@@ -1,0 +1,26 @@
+{
+  "hopperList": [
+    {
+      "uuid": "a993dac2-f36a-499c-9555-9375b9542d51",
+      "owner": "a3b6f4f9-5688-4ae1-bd3a-0ac0ccfbbf1d",
+      "whitelistPlayers": [],
+      "location": "{\n  \"name\": \"vultaria\",\n  \"x\": \"22.0\",\n  \"y\": \"66.0\",\n  \"z\": \"8.0\",\n  \"pitch\": \"0.0\",\n  \"yaw\": \"0.0\"\n}",
+      "level": 0,
+      "linkedContainers": [
+        "{\n  \"name\": \"vultaria\",\n  \"x\": \"24.0\",\n  \"y\": \"66.0\",\n  \"z\": \"7.0\",\n  \"pitch\": \"0.0\",\n  \"yaw\": \"0.0\"\n}"
+      ],
+      "modules": {}
+    },
+    {
+      "uuid": "a3f5b5fa-64df-4fb8-bf90-709414689bb5",
+      "owner": "a3b6f4f9-5688-4ae1-bd3a-0ac0ccfbbf1d",
+      "whitelistPlayers": [],
+      "location": "{\n  \"name\": \"vultaria\",\n  \"x\": \"61.0\",\n  \"y\": \"67.0\",\n  \"z\": \"44.0\",\n  \"pitch\": \"0.0\",\n  \"yaw\": \"0.0\"\n}",
+      "level": 3,
+      "linkedContainers": [
+        "{\n  \"name\": \"vultaria\",\n  \"x\": \"61.0\",\n  \"y\": \"67.0\",\n  \"z\": \"41.0\",\n  \"pitch\": \"0.0\",\n  \"yaw\": \"0.0\"\n}"
+      ],
+      "modules": {}
+    }
+  ]
+}

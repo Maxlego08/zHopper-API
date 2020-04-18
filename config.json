@@ -1,0 +1,98 @@
+{
+  "taskTickPerSecond": 20,
+  "inventoryHopperSize": 27,
+  "inventoryHopperName": "§eHopper",
+  "hopperInformationSlot": 4,
+  "blacklistBlockBreak": [
+    "BEDROCK",
+    "HOPPER"
+  ],
+  "suctionButton": {
+    "slot": 0,
+    "name": "§eSuction",
+    "item": 154,
+    "data": 0,
+    "lore": [
+      "§f§l» §eDescription§7:",
+      "  §7Pick up objects in a radius according to the level of the hopper.",
+      "",
+      "§f§l» §e%status%"
+    ]
+  },
+  "killButton": {
+    "slot": 1,
+    "name": "§eKill",
+    "item": 256,
+    "data": 0,
+    "lore": [
+      "§f§l» §eDescription§7:",
+      "  §7Kill entities in a radius according to the level of the hopper.",
+      "",
+      "§f§l» §e%status%"
+    ]
+  },
+  "linkButton": {
+    "slot": 2,
+    "name": "§eLink",
+    "item": 54,
+    "data": 0,
+    "lore": [
+      "§f§l» §eDescription§7:",
+      "  §7Transfer the items from the hopper to the different chests",
+      "",
+      "§f§l» §e%status%"
+    ]
+  },
+  "blockButton": {
+    "slot": 3,
+    "name": "§eBlock",
+    "item": 2,
+    "data": 0,
+    "lore": [
+      "§f§l» §eDescription§7:",
+      "  §7Destroys a certain number of blocks above the hopper",
+      "",
+      "§f§l» §e%status%"
+    ]
+  },
+  "backButton": {
+    "slot": 22,
+    "name": "§cBack to hopper",
+    "item": 166,
+    "data": 0,
+    "lore": []
+  },
+  "removeHopperButton": {
+    "slot": 22,
+    "name": "§cRemove hopper",
+    "item": 166,
+    "data": 0,
+    "lore": [
+      "",
+      "§f§l» §cClick to remove hopper",
+      ""
+    ]
+  },
+  "linkedChestButton": {
+    "slot": 11,
+    "name": "§eLinked chest",
+    "item": 54,
+    "data": 0,
+    "lore": [
+      "",
+      "§f§l» §eAmount of chest link: §6%amount%",
+      "%chestLocations%",
+      "",
+      "§f§l» §eClick to link an other chest.",
+      ""
+    ]
+  },
+  "moduleConfigurationButton": {
+    "slot": 15,
+    "name": "§eModules",
+    "item": 138,
+    "data": 0,
+    "lore": []
+  },
+  "linkedChestLine": "§f§l» §e%x%, %y%, %z%"
+}

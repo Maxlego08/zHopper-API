@@ -1,0 +1,101 @@
+levels:
+  '1':
+    level: 1
+    name: Premier level
+    price: 0
+    economy: VAULT
+    properties:
+      passiveKill: false
+      maxKillPerSecond: 0
+      monsterKill: false
+      milliSecondModuleItem: 1000
+      maxItemPerSecond: 1
+      milliSecondModuleKill: 1000
+      maxLink: 1
+      maxDistanceSuction: 2
+      maxDistanceLink: 5
+      milliSecondModuleSuction: 1000
+      milliSecondModuleBlock: 1000
+      maxDistanceKill: 0
+      maxDistanceBlock: 1
+    item:
+      id: 384
+      data: 0
+      amount: 1
+      durability: 0
+      name: "\xa7eHopper"
+      lore:
+      - "&f&l\xbb &eNiveau&8: &6%level%"
+      - "&f&l\xbb &eNom&8: &6%name%"
+      - "&f&l\xbb &eNombre de containeur&8: &6%maxLink%"
+      - "&f&l\xbb &eDistance maximum&8: &6%maxItemPerSecond%"
+      - ''
+      - "&f&l\xbb &eProchain Niveau&8: &6%nextLevel%"
+      - "&f&l\xbb &eNom&8: &6%nextName%"
+      - "&f&l\xbb &eNombre de containeur&8: &6%nextMaxLink%"
+      - "&f&l\xbb &eDistance maximum&8: &6%nextMaxItemPerSecond%"
+  '2':
+    level: 2
+    name: "Deuxi\xe8me level"
+    price: 100
+    economy: VAULT
+    properties:
+      passiveKill: true
+      maxKillPerSecond: 1
+      monsterKill: false
+      milliSecondModuleItem: 1000
+      maxItemPerSecond: 2
+      milliSecondModuleKill: 1000
+      maxLink: 2
+      maxDistanceSuction: 5
+      maxDistanceLink: 10
+      milliSecondModuleSuction: 1000
+      milliSecondModuleBlock: 1000
+      maxDistanceKill: 5
+      maxDistanceBlock: 2
+    item:
+      id: 384
+      data: 0
+      amount: 1
+      durability: 0
+      name: "\xa7eHopper"
+      lore:
+      - "&f&l\xbb &eNiveau&8: &6%level%"
+      - "&f&l\xbb &eNom&8: &6%name%"
+      - "&f&l\xbb &eNombre de containeur&8: &6%maxLink%"
+      - "&f&l\xbb &eDistance maximum&8: &6%maxItemPerSecond%"
+      - ''
+      - "&f&l\xbb &eProchain Niveau&8: &6%nextLevel%"
+      - "&f&l\xbb &eNom&8: &6%nextName%"
+      - "&f&l\xbb &eNombre de containeur&8: &6%nextMaxLink%"
+      - "&f&l\xbb &eDistance maximum&8: &6%nextMaxItemPerSecond%"
+  '3':
+    level: 3
+    name: "Troisi\xe8me level"
+    price: 250
+    economy: VAULT
+    properties:
+      passiveKill: true
+      maxKillPerSecond: 3
+      monsterKill: true
+      milliSecondModuleItem: 1000
+      maxItemPerSecond: 32
+      milliSecondModuleKill: 1000
+      maxLink: 5
+      maxDistanceSuction: 10
+      maxDistanceLink: 20
+      milliSecondModuleSuction: 1000
+      milliSecondModuleBlock: 1000
+      maxDistanceKill: 10
+      maxDistanceBlock: 3
+    item:
+      id: 384
+      data: 0
+      amount: 1
+      durability: 0
+      name: "\xa7eHopper"
+      lore:
+      - "&f&l\xbb &eNiveau&8: &6%level%"
+      - "&f&l\xbb &eNom&8: &6%name%"
+      - "&f&l\xbb &eNombre de containeur&8: &6%maxLink%"
+      - "&f&l\xbb &eDistance maximum&8: &6%maxItemPerSecond%"

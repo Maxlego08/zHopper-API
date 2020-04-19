@@ -24,37 +24,37 @@ public interface Level {
 	
 	/**
 	 * 
-	 * @return
+	 * @return the property maxDistanceLink
 	 */
 	int getMaxDistanceLink();
 	
 	/**
 	 * 
-	 * @return
+	 * @return the property maxDistanceSuction
 	 */
 	int getMaxDistanceSuction();
 	
 	/**
 	 * 
-	 * @return
+	 * @return the property maxDistanceKill
 	 */
 	int getMaxDistanceKill();
 	
 	/**
 	 * 
-	 * @return
+	 * @return the property maxLink
 	 */
 	int getMaxLink();
 	
 	/**
 	 * 
-	 * @return
+	 * @return the property maxItemPerSecond
 	 */
 	int getMaxItemPerSecond();
 	
 	/**
 	 * 
-	 * @return
+	 * @return the property maxKillPerSecond 
 	 */
 	int getMaxKillPerSecond();
 	
@@ -84,7 +84,7 @@ public interface Level {
 	
 	/**
 	 * 
-	 * @return
+	 * @return the price
 	 */
 	long getPrice();
 	
@@ -102,47 +102,46 @@ public interface Level {
 	
 	/**
 	 * 
-	 * @return
+	 * @return the property 
 	 */
 	boolean canKillMonster();
 	
 	/**
-	 * 
-	 * @return
+	 * @return the property passiveKill
 	 */
 	boolean canKillPassive();
 	
 	/**
-	 * 
+	 * Allows to recover a property in a Object
 	 * @param key
-	 * @return
+	 * @return object
 	 */
 	Object getProperty(String key);
 	
 	/**
-	 * 
+	 * Allows to recover a property in a integer
 	 * @param key
-	 * @return
+	 * @return integer
 	 */
 	int getIntegerAsProperty(String key);
 	
 	/**
-	 * 
+	 * Allows to recover a property in a boolean
 	 * @param key
-	 * @return
+	 * @return boolean
 	 */
 	boolean getBooleanAsProperty(String key);
 	
 	/**
-	 * 
+	 * Allows to recover a property in a long
 	 * @param key
-	 * @return
+	 * @return long
 	 */
 	long getLongAsProperty(String key);
 	
 	/**
-	 *
-	 * @return
+	 * Used to retrieve the list of properties
+	 * @return map of properties
 	 */
 	Map<String, Object> getProperties();
 	
@@ -157,5 +156,32 @@ public interface Level {
 	 * @param module
 	 */
 	void addModule(Module module);
+	
+	/**
+	 * Allows you to add a property in a level, be careful if the property already exists it will be replaced.
+	 * @param key
+	 * @param value
+	 */
+	void addProperty(String key, Object value);
+	
+	/**
+	 * Add a property to a level if it does not exist
+	 * @param key
+	 * @param value
+	 */
+	void addPropertyIfAbsent(String key, Object value);
+	
+	/**
+	 * Allows you to remove a property, be careful if this property is a default then it will not be removed.
+	 * @param key
+	 */
+	void removeProperty(String key);
+
+	/**
+	 * Lets you know if a property is a default
+	 * @param key
+	 * @return
+	 */
+	boolean isDefaultProperty(String key);
 	
 }

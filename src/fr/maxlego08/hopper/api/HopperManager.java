@@ -152,4 +152,25 @@ public interface HopperManager extends Saveable {
 	 */
 	void run();
 
+
+	/**
+	 * Allows you to add a property for every level, be careful if the property already exists it will be replaced.
+	 * @param key
+	 * @param value
+	 */
+	void addProperty(String key, Object value);
+	
+	/**
+	 * Add a property for every level if it does not exist
+	 * @param key
+	 * @param value
+	 */
+	void addPropertyIfAbsent(String key, Object value);
+	
+	/**
+	 * Allows you to remove a property for every level, be careful if this property is a default then it will not be removed.
+	 * @param key
+	 */
+	void removeProperty(String key);
+	
 }

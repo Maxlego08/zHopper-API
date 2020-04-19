@@ -1,3 +1,5 @@
+<p align="center"><img src="http://img.groupez.xyz/zhopper/logo.png" width="200" alt="zHopper"></p>
+
 # zHopper
 
 Price: 10.94€

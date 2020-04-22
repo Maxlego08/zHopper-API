@@ -40,6 +40,7 @@
     "INVENTORY_BUTTON_NEXT": "§f» §7Page suivante",
     "HOPPER_LEVEL_ERROR": "§cYou have reached the maximum level to hopper",
     "COMMAND_NO_PERMISSION": "§cYou do not have permission to execute this command.",
-    "HOPPER_LINK_ERROR_CONTAINER": "§cYou must click on a §fchest§c."
+    "HOPPER_LINK_ERROR_CONTAINER": "§cYou must click on a §fchest§c.",
+    "HOPPER_RELOAD_CLOSE": "§cYour inventory has just been closed automatically."
   }
 }

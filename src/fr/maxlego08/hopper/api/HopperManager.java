@@ -173,4 +173,9 @@ public interface HopperManager extends Saveable {
 	 */
 	void removeProperty(String key);
 	
+	/**
+	 * Allows you to update the modules of all levels according to the config
+	 */
+	void updateLevel();
+	
 }

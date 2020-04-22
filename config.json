@@ -3,6 +3,12 @@
   "inventoryHopperSize": 27,
   "inventoryHopperName": "§eHopper",
   "hopperInformationSlot": 4,
+  "enableModuleSuction": false,
+  "enableModuleKillMob": false,
+  "enableModuleLinkChest": false,
+  "enableModuleItemTransfert": false,
+  "enableModuleBlockBreak": false,
+  "closeInventoryOnReload": true,
   "blacklistBlockBreak": [
     "BEDROCK",
     "HOPPER"

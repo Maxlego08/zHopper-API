@@ -178,6 +178,11 @@ public interface Level {
 	void removeProperty(String key);
 
 	/**
+	 * Allows to update the modules of a level according to the config
+	 */
+	void updateModule();
+	
+	/**
 	 * Lets you know if a property is a default
 	 * @param key
 	 * @return

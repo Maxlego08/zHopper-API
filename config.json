@@ -3,12 +3,29 @@
   "inventoryHopperSize": 27,
   "inventoryHopperName": "§eHopper",
   "hopperInformationSlot": 4,
-  "enableModuleSuction": false,
-  "enableModuleKillMob": false,
-  "enableModuleLinkChest": false,
-  "enableModuleItemTransfert": false,
-  "enableModuleBlockBreak": false,
-  "closeInventoryOnReload": true,
+  "useLevelForEveryHopper": true,
+  "giveCustomHopperIfLevelIsDefault": true,
+  "hopperName": "§eHopper",
+  "hopperLorePerLevel": {
+    "1": [
+      "§f§l» §7Hopper Level: §6%level%"
+    ],
+    "2": [
+      "§f§l» §7Hopper Level: §6%level%"
+    ],
+    "3": [
+      "§f§l» §7Hopper Level: §6%level%"
+    ]
+  },
+  "defaultLore": [
+    "§f§l» §7Hopper Level: §6%level%"
+  ],
+  "enableModuleSuction": true,
+  "enableModuleKillMob": true,
+  "enableModuleLinkChest": true,
+  "enableModuleItemTransfert": true,
+  "enableModuleBlockBreak": true,
+  "closeInventoryOnReload": false,
   "blacklistBlockBreak": [
     "BEDROCK",
     "HOPPER"

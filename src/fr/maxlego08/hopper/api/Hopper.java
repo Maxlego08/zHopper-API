@@ -73,33 +73,39 @@ public interface Hopper {
 	HopperManager getManager();
 	
 	/**
-	 * 
-	 * @return
+	 * Returns the list of chests linked to the hopper
+	 * @return list
 	 */
 	List<Location> getLinkedContainers();
 	
 	/**
-	 * 
-	 * @return
+	 * Used to find out if the hopper is valid and can be used
+	 * @return true if is valid
 	 */
 	boolean isValid();
 	
 	/**
-	 * 
+	 * Used to find out if a module is activated
 	 * @param module
 	 * @return
 	 */
 	boolean isActive(Module module);
 
 	/**
-	 * 
+	 * Lets you know if a hopper is fake or not
+	 * @return
+	 */
+	boolean isFake();
+	
+	/**
+	 * Allows you to deactivate or activate a module
 	 * @param module
 	 * @param active
 	 */
 	void setActive(Module module, boolean active);
 	
 	/**
-	 * 
+	 * Lets you know if it is possible to link a new chest to the hopper
 	 * @return
 	 */
 	boolean canLink();
@@ -111,7 +117,7 @@ public interface Hopper {
 	void setLevel(int level);
 	
 	/**
-	 * 
+	 * Open the hopper configuration to a player
 	 * @param player
 	 */
 	void openConfiguration(Player player);
@@ -122,12 +128,12 @@ public interface Hopper {
 	void destroy();
 	
 	/**
-	 * 
+	 * Method that will run all modules
 	 */
 	void run();
 	
 	/**
-	 * 
+	 * Used to connect a chest to a hopper
 	 * @param player
 	 * @param block
 	 */
